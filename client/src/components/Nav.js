@@ -1,35 +1,34 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "../styles/Nav.css";
 
 function Nav() {
 
-
-
-    return (
-        <nav>
-            <h1>Netflux</h1>
-            <ul className="nav-links">
-
-                <Link to='/signin'>
-                    <li>Login</li>
-                </Link>
-
-                <Link to='/'>
-                    <li>Logout</li>
-                </Link>
-
-
-
-            </ul>
-        </nav>
-    );
-}
+  return (
+    <header class="navbar navbar-dark navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="" to="/">
+            <span class="navbar-logo">Netflux</span>
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse" id="navbar-nav" role="navigation">
+          <ul class="nav navbar-nav navbar-right nav-main">
+            <li class="hidden">
+              <a href="" to="/signin" id="nav-link-login">
+                Login
+              </a>
+            </li>
+            <li role="separator" class="divider"></li>
+            <li>
+              <a href="/" id="nav-link-sign-in">
+                Log Out
+              </a>
+            </li>
+          </ul>
 
 export default Nav;
 
-
-//notes for team: 
+//notes for team:
 //import link, wrap it around li elements
 //add "to" with corresponding url paths from the app.js file
-
-
