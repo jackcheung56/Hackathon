@@ -11,7 +11,9 @@ import ViewProfile from "../pages/ViewProfile";
 
 function Router() {
     const [inputText, setInputText] = useState('')
-    const [users, setUsers] = useState([])
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const [users, setUsers] = useState({})
 
 
 
@@ -22,15 +24,51 @@ function Router() {
             <Switch>
 
 
-                <Route path="/signin" component={SignIn} />
 
-                <Route path="/signup" component={SignUp} />
+
+                <Route exact path='/signin'>
+                    <SignIn
+
+                        email={email}
+                        setEmail={setEmail}
+
+                        password={password}
+                        setPassword={setPassword}
+
+
+                        users={users}
+                        setUsers={setUsers}
+
+
+                    ></SignIn>
+                </Route>
+
+
+
+
+                <Route exact path='/signup'>
+                    <SignUp
+
+                        email={email}
+                        setEmail={setEmail}
+
+                        password={password}
+                        setPassword={setPassword}
+
+
+                        users={users}
+                        setUsers={setUsers}
+                    ></SignUp>
+                </Route>
+
+
+
 
                 <Route exact path='/'>
-                    <Form 
-                        inputText={inputText} 
-                        setInputText={setInputText} 
-                        users={users} 
+                    <Form
+                        inputText={inputText}
+                        setInputText={setInputText}
+                        users={users}
                         setUsers={setUsers}
                     ></Form>
                 </Route>
@@ -41,7 +79,7 @@ function Router() {
 
 
 
-   
+
             </Switch>
         </div>
     )
@@ -64,3 +102,9 @@ export default Router
 
 
 
+
+// inputText={inputText} 
+// setInputText={setInputText} 
+// todos={todos} 
+// setTodos={setTodos}
+// setStatus={setStatus}
