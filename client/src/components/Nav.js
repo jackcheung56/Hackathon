@@ -14,7 +14,7 @@ function Nav() {
                     <li>Login</li>
                 </Link>
 
-                <Link to='/about'>
+                <Link to='/'>
                     <li>Logout</li>
                 </Link>
 
