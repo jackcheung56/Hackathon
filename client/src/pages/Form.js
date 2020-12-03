@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../styles/Nav.css';
 
 const Form = ({inputText, setInputText, users, setUsers} ) => {
     //two methods
@@ -38,7 +38,6 @@ const Form = ({inputText, setInputText, users, setUsers} ) => {
             <div className="block">
                 <input value={inputText} onChange= {inputTextHandler} type="text" className="user-input"></input>
                 <button onClick={submitTodoHandler} className="todo-button" type="submit">Get Started</button>
-  
             </div>
         </form>
 
