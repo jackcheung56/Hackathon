@@ -1,8 +1,11 @@
 {
   "name": "sei-hackathon",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -10,6 +13,7 @@
     "faker": "^5.1.0",
     "nodemon": "^2.0.6",
     "pg": "^8.5.1",
+    "react-router-dom": "^5.2.0",
     "sequelize": "^6.3.5",
     "sequelize-cli": "^6.2.0"
   }

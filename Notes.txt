@@ -1,0 +1,42 @@
+Changed name of database in config.json
+database name: "database": "hack_development",
+
+
+Created database with npx sequelize-cli db:create
+
+Use following to drop into psql shell:
+
+psql hack_development
+
+
+Created user model:
+
+npx sequelize-cli model:generate --name User --attributes email:string,passwordDigest:string
+
+    made edits to migration and model
+
+    npx sequelize-cli db:migrate
+
+
+Created account model
+
+npx sequelize-cli model:generate --name Account --attributes tier:string,userId:integer
+
+    made edits to migration and model
+
+    npx sequelize-cli db:migrate
+
+
+
+Created profile model
+
+npx sequelize-cli model:generate --name Profile --attributes name:string,avatar:string,accountId:integer
+
+
+
+Commands to check joins:
+
+SELECT * FROM accounts JOIN profiles ON accounts.id = profiles.account_id;
+
+SELECT * FROM accounts JOIN profiles ON accounts.id = profiles.account_id JOIN users ON accounts.user_id = users.id;
+
