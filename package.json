@@ -1,8 +1,11 @@
 {
   "name": "sei-hackathon",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
