@@ -13,8 +13,8 @@ const CreateAccount = async (req, res) => {
 
 const GetAccount = async (req, res) => {
     try{
-        const accountId = parseInt(req.params.id)
-        const account = await Account.findByPk(req.params.id, {
+        const accountId = parseInt(req.params.user_id)
+        const account = await Account.findByPk(req.params.user_id, {
             where: {
                 id: accountId
             },
