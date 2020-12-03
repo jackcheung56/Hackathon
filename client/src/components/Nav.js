@@ -26,7 +26,11 @@ function Nav() {
               </a>
             </li>
           </ul>
-
+        </nav>
+      </div>
+    </header>
+  ) 
+}
 export default Nav;
 
 //notes for team:
