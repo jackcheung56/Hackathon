@@ -40,3 +40,4 @@ SELECT * FROM accounts JOIN profiles ON accounts.id = profiles.account_id;
 
 SELECT * FROM accounts JOIN profiles ON accounts.id = profiles.account_id JOIN users ON accounts.user_id = users.id;
 
+SELECT * FROM users JOIN accounts ON users.id = accounts.user_id;
