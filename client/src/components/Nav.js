@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "../styles/Nav.css";
 
 function Nav() {
+
   return (
     <header class="navbar navbar-dark navbar-fixed-top" role="banner">
       <div class="container">
@@ -25,11 +26,6 @@ function Nav() {
               </a>
             </li>
           </ul>
-        </nav>
-      </div>
-    </header>
-  );
-}
 
 export default Nav;
 
