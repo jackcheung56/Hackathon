@@ -18,19 +18,24 @@ html {
   color: #222326;
 }
 
+
 .navbox{
   background: rgb(245,67,53);
 }
 
+
+
 .block{
+  margin-top: 250px;
   width: 50%;
-  display: inline-block;
-  margin-left: 450px;
-  justify-content: space-around;
+  display: flex;
+  margin-left: 330px;
+  justify-content: center;
   align-items: center;
   list-style: none;
 
 }
+
 
 a {
   width: 605px;
@@ -39,6 +44,15 @@ a {
   list-style: none;
   text-decoration: none;
   color: #222326;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+
 }
 
 

@@ -4,6 +4,7 @@ import HomePage from "../pages/HomePage";
 import Form from "../pages/Form";
 import SignUp from "../pages/SignUp";
 import SignIn from "../pages/SignIn";
+import Profilelist from "../pages/ProfileList";
 import Nav from './Nav'
 import CreateProfile from "../pages/CreateProfile";
 import ViewProfile from "../pages/ViewProfile";
@@ -23,7 +24,7 @@ function Router() {
 
                 <Route path="/signin" component={SignIn} />
 
-                <Route path="/signup/:email" component={SignUp} />
+                <Route path="/signup" component={SignUp} />
 
                 <Route exact path='/'>
                     <Form 
@@ -33,6 +34,9 @@ function Router() {
                         setUsers={setUsers}
                     ></Form>
                 </Route>
+
+
+                <Route path="/profiles" component={Profilelist} />
 
 
 
