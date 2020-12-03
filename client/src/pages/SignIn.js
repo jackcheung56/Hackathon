@@ -1,20 +1,18 @@
-import React, { Component } from "react";
+import React from 'react';
+import '../styles/Nav.css';
+import {Link} from 'react-router-dom'
 
-const SignIn = ({ inputText, setInputText, users, setUsers, setStatus }) => {
-  //two methods
-  //set props as the argument-access it in the function below with 'props.setInputText'
-  //OR
-  //destructure-use curly brackets, take setInputText out of props
+function SignIn() {
+    return (
+      <form>
+        <div className="list">
+            {/* <input value={inputText} onChange= {inputTextHandler} type="text"> */}
+            <input type="text"></input>
+            <input type="text"></input>
+            <button><Link to="/profiles">Sign In</Link></button>
+        </div>
+      </form>
+    );
+}
 
-  const inputTextHandler = (event) => {
-    console.log("Contains a target", event);
-    console.log("Contains a value", event.target);
-    console.log("input text:", event.target.value);
-    //how can we set state based on the input text?
-    setInputText(event.target.value);
-    //set state as the eventargetvalue of the input div
-  };
-
-  return <div></div>;
-};
 export default SignIn;

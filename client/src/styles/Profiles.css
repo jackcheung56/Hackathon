@@ -1,0 +1,13 @@
+.proText{
+    color:white;
+
+}
+
+.profileBox{
+    width: 200px;
+    height: 200px;
+    background: rgb(66,66,66);
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px  #000000;
+}
+

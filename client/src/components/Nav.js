@@ -13,15 +13,15 @@ function Nav() {
                 <ul className="nav-links">
 
                     <Link to='/'>
-                        <h1>Netflux</h1>
+                        <h1>NETFLUX</h1>
                     </Link>
 
                     <Link to='/signin'>
-                        <li>Login</li>
+                        <li>LOGIN</li>
                     </Link>
 
                     <Link to='/'>
-                        <li>Logout</li>
+                        <li>LOGOUT</li>
                     </Link>
 
                 </ul>

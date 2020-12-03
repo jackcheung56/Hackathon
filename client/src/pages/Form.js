@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/Nav.css';
+import {Link} from 'react-router-dom'
 
 const Form = ({inputText, setInputText, users, setUsers} ) => {
     //two methods
@@ -17,7 +18,7 @@ const Form = ({inputText, setInputText, users, setUsers} ) => {
         //set state as the eventargetvalue of the input div
     }
 
-    const submitTodoHandler = (event) => {
+    const submitFormHandler = (event) => {
         //...users means, if there are pre-existing things in the array, pass them along
         event.preventDefault()
         setUsers([
@@ -36,8 +37,12 @@ const Form = ({inputText, setInputText, users, setUsers} ) => {
     return (
         <form>
             <div className="block">
+                
                 <input value={inputText} onChange= {inputTextHandler} type="text" className="user-input"></input>
-                <button onClick={submitTodoHandler} className="todo-button" type="submit">Get Started</button>
+                <button onClick={submitFormHandler} className="todo-button" type="submit">
+                    <Link to="/signup">Get Started</Link>
+                </button>
+
             </div>
         </form>
 
@@ -45,3 +50,5 @@ const Form = ({inputText, setInputText, users, setUsers} ) => {
 }
 
 export default Form
+
+
