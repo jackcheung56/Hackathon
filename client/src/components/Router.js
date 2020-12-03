@@ -11,7 +11,6 @@ import ViewProfile from "../pages/ViewProfile";
 function Router() {
     const [inputText, setInputText] = useState('')
     const [users, setUsers] = useState([])
-    const [status, setStatus] = useState('all')
 
 
 
@@ -21,7 +20,6 @@ function Router() {
             <Nav></Nav>
             <Switch>
 
-                {/* <Route exact path='/' component={Form} /> */}
 
                 <Route path="/signin" component={SignIn} />
 
@@ -33,7 +31,6 @@ function Router() {
                         setInputText={setInputText} 
                         users={users} 
                         setUsers={setUsers}
-                        setStatus={setStatus}
                     ></Form>
                 </Route>
 
@@ -60,4 +57,6 @@ export default Router
 //we need to declare state in the router
 //BECAUSE the state of that input form, is going to update on HOME
 //and get passed as props to the sign up page. 
+
+
 
